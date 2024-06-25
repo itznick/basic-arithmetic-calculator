@@ -1,0 +1,15 @@
+body.dark-mode .header {
+    background-color: #121212;
+    border-bottom: 1px solid #cccccc;
+}
+
+body.dark-mode .title,
+body.dark-mode .social-links i { color: #ffffff; }
+
+body.dark-mode .social-links i:hover{ color: #ffab40; }
+
+body.dark-mode .calculator{ background-color: #1F1B24; }
+
+body.dark-mode #display{ color: #ffffff; } 
+
+body.dark-mode #display::placeholder { color: #ffffff; }

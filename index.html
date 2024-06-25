@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/darkmode.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h2 class="title">Basic Arithmetic Calculator</h2>
+            <nav class="navbar">
+                <div class="social-links">
+                    <a href="https://github.com/itznick" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/nikkhil29/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <i id="theme-toggle-icon" class="fa-solid fa-moon"></i>
+                </div>
+            </nav>
+        </header>
+
+        <div class="calculator">
+            <div class="calc-wrapper">
+                <div class="display-div">
+                    <input type="text" id="display" placeholder="0" autocomplete="off" disabled>
+                </div>
+                <div class="buttons-group">
+                    <button class="key" onclick="clearDisplay()">C</button>
+                    <button class="key" onclick="deleteLast()">←</button>
+                    <button class="key" onclick="appendToDisplay('%')">%</button>
+                    <button class="key" onclick="appendToDisplay('/')">/</button>
+                    <button class="key" onclick="appendToDisplay('7')">7</button>
+                    <button class="key" onclick="appendToDisplay('8')">8</button>
+                    <button class="key" onclick="appendToDisplay('9')">9</button>
+                    <button class="key" onclick="appendToDisplay('*')">*</button>
+                    <button class="key" onclick="appendToDisplay('4')">4</button>
+                    <button class="key" onclick="appendToDisplay('5')">5</button>
+                    <button class="key" onclick="appendToDisplay('6')">6</button>
+                    <button class="key" onclick="appendToDisplay('-')">-</button>
+                    <button class="key" onclick="appendToDisplay('1')">1</button>
+                    <button class="key" onclick="appendToDisplay('2')">2</button>
+                    <button class="key" onclick="appendToDisplay('3')">3</button>
+                    <button class="key" onclick="appendToDisplay('+')">+</button>
+                    <button class="key" onclick="appendToDisplay('00')">00</button>
+                    <button class="key" onclick="appendToDisplay('0')">0</button>
+                    <button class="key" onclick="appendToDisplay('.')">.</button>
+                    <button class="key" onclick="calculateResult()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

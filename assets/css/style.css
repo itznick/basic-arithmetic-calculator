@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body { transition: all 0.3s; }
+
+.container {
+    height: 100vh;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #cccccc;
+}
+
+.title {
+    font-size: calc(1rem + 1vw);
+    font-weight: 400;
+}
+
+.social-links { display: flex; }
+
+.social-links i {
+    margin: 10px;
+    color: #000;
+    font-size: calc(1rem + 1vw);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.social-links i:hover { color: #ffab40; }
+
+.calculator {
+    width: 100%;
+    height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+.calc-wrapper {
+    width: 30%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #b0b0b0;
+    transition: all 0.3s;
+}
+
+.calc-wrapper:hover { transform: scale(1.02); }
+
+.display-div {
+    width: 90%;
+    height: 4rem;
+    margin: 20px 10px;
+}
+
+#display {
+    width: 100%;
+    height: inherit;
+    padding: 10px;
+    padding-right: 15px;
+    font-size: 2rem;
+    text-align: right;
+    box-shadow: 0 0 2px #b0b0b0;
+}
+
+#display::placeholder { text-align: right; }
+
+.buttons-group {
+    width: 90%;
+    height: calc(100% - 8rem);
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 15px;
+}
+
+.buttons-group button {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #b0b0b0;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.buttons-group button:hover:focus { transform: scale(0.9); }
+
+.buttons-group button:hover { color: #ff9100; }
+
+button:nth-child(4n) {
+    background: #ffab40;
+    color: #ffffff;
+}
+
+button:nth-child(4n):hover {
+    background: #ff9100;
+    color: #ffffff
+}
